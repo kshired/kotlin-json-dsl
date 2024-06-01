@@ -88,4 +88,40 @@ class JsonArrayBuilderTest {
             ]
         """.trimIndent()
     }
+
+    @Test
+    fun `should create json array with nested array`() {
+        val jsonArray = jsonArray {
+            jsonArray {
+                +"string1"
+                add(1)
+                jsonArray {
+                    +"string2"
+                    add(2)
+                }
+            }
+            jsonArray {
+                +"string3"
+                add(3)
+            }
+        }
+
+        jsonArray.toJsonString() shouldBeEqual "[[\"string1\",1,[\"string2\",2]],[\"string3\",3]]"
+        jsonArray.toPrettyJsonString() shouldBeEqual """
+            [
+                [
+                    "string1",
+                    1,
+                    [
+                        "string2",
+                        2
+                    ]
+                ],
+                [
+                    "string3",
+                    3
+                ]
+            ]
+        """.trimIndent()
+    }
 }

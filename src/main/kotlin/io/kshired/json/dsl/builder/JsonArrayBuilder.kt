@@ -35,6 +35,11 @@ class JsonArrayBuilder(
         list.add(builder.build())
     }
 
+    fun jsonArray(init: JsonArrayBuilder.() -> Unit) {
+        val builder = JsonArrayBuilder().apply(init)
+        list.add(builder.build())
+    }
+
     fun build(): JsonValue.JsonArray = JsonValue.JsonArray(list)
 }
 
