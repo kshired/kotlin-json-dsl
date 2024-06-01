@@ -1,4 +1,4 @@
-package io.kshired.json.dsl
+package io.github.kshired.json.dsl
 
 import io.kotest.matchers.equals.shouldBeEqual
 import org.junit.jupiter.api.Test

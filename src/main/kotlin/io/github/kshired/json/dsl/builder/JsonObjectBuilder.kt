@@ -1,6 +1,6 @@
-package io.kshired.json.dsl.builder
+package io.github.kshired.json.dsl.builder
 
-import io.kshired.json.dsl.JsonValue
+import io.github.kshired.json.dsl.JsonValue
 
 class JsonObjectBuilder(
     private val map: MutableMap<String, JsonValue> = mutableMapOf()

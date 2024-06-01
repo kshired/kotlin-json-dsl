@@ -1,7 +1,7 @@
-package io.kshired.json.dsl.builder
+package io.github.kshired.json.dsl.builder
 
+import io.github.kshired.json.dsl.JsonValue
 import io.kotest.matchers.equals.shouldBeEqual
-import io.kshired.json.dsl.JsonValue
 import org.junit.jupiter.api.Test
 
 class JsonArrayBuilderTest {

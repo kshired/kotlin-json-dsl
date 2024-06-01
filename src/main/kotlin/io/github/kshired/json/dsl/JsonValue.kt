@@ -1,4 +1,4 @@
-package io.kshired.json.dsl
+package io.github.kshired.json.dsl
 
 
 sealed class JsonValue {
