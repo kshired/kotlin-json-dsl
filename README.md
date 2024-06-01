@@ -1,6 +1,37 @@
 # Kotlin-Json-DSL
 
-This is a simple Kotlin DSL for creating JSON strings.
+[<img src="https://img.shields.io/maven-central/v/io.github.kshired/kotlin-json-dsl.svg?label=latest%20release"/>](https://search.maven.org/search?q=g:io.github.kshired)
+![GitHub](https://img.shields.io/github/license/kshired/kotlin-json-dsl)
+
+Simple Kotlin DSL library for creating JSON strings.
+
+## Installation
+
+### Gradle
+
+```groovy
+dependencies {
+    implementation 'io.github.kshired:kotlin-json-dsl:0.0.1'
+}
+```
+
+### Gradle(kotlin)
+
+```kotlin
+dependencies {
+    implementation("io.github.kshired:kotlin-json-dsl:0.0.1")
+}
+```
+
+### Maven
+
+```xml
+<dependency>
+    <groupId>io.github.kshired</groupId>
+    <artifactId>kotlin-json-dsl</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
 
 ## Usage
 
